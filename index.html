@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HUCON (foztoro)</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <script>
+    function konversiHuruf() {
+      var teksInput = document.getElementById('input').value;
+      var hasilKonversi = "";
+
+      for (var i = 0; i < teksInput.length; i++) {
+        var karakter = teksInput[i];
+        // Melakukan konversi berdasarkan rincian yang diberikan
+        switch (karakter) {
+          case 'h':
+            hasilKonversi += 'ا';
+            break;
+          case 'f':
+            hasilKonversi += 'ب';
+            break;
+          case 'j':
+            hasilKonversi += 'ت';
+            break;
+          case 'e':
+            hasilKonversi += 'ث';
+            break;
+          case '[':
+            hasilKonversi += 'ج';
+            break;
+          case 'p':
+            hasilKonversi += 'ح';
+            break;
+          case 'o':
+            hasilKonversi += 'خ';
+            break;
+          case ']':
+            hasilKonversi += 'د';
+            break;
+          case '`':
+            hasilKonversi += 'ذ';
+            break;
+          case 'v':
+            hasilKonversi += 'ر';
+            break;
+          case '.':
+            hasilKonversi += 'ز';
+            break;
+          case 's':
+            hasilKonversi += 'س';
+            break;
+          case 'a':
+            hasilKonversi += 'ش';
+            break;
+          case 'w':
+            hasilKonversi += 'ص';
+            break;
+          case 'q':
+            hasilKonversi += 'ض';
+            break;
+          case "'":
+            hasilKonversi += 'ط';
+            break;
+          case '/':
+            hasilKonversi += 'ظ';
+            break;
+          case 'u':
+            hasilKonversi += 'ع';
+            break;
+          case 'y':
+            hasilKonversi += 'غ';
+            break;
+          case 't':
+            hasilKonversi += 'ف';
+            break;
+          case 'r':
+            hasilKonversi += 'ق';
+            break;
+          case ';':
+            hasilKonversi += 'ك';
+            break;
+          case 'g':
+            hasilKonversi += 'ل';
+            break;
+          case 'l':
+            hasilKonversi += 'م';
+            break;
+          case 'k':
+            hasilKonversi += 'ن';
+            break;
+          case ',':
+            hasilKonversi += 'و';
+            break;
+          case 'i':
+            hasilKonversi += 'ه';
+            break;
+          case 'x':
+            hasilKonversi += 'ء';
+            break;
+          case 'd':
+            hasilKonversi += 'ي';
+            break;
+          case 'H':
+            hasilKonversi += 'أ';
+            break;
+          case 'Y':
+            hasilKonversi += 'إ';
+            break;
+          case 'c':
+            hasilKonversi += 'ؤ';
+            break;
+          case 'z':
+            hasilKonversi += 'ئ';
+            break;
+          case 'n':
+            hasilKonversi += 'ى';
+            break;
+          case 'N':
+            hasilKonversi += 'آ';
+            break;
+          case 'm':
+            hasilKonversi += 'ة';
+            break;
+          case 'K':
+            hasilKonversi += '،';
+            break;
+          case 'J':
+            hasilKonversi += 'ـ';
+            break;
+          case '>':
+            hasilKonversi += '.';
+            break;
+            break;
+          case '\n':
+            hasilKonversi += '<<>>';
+            break;
+          default:
+            hasilKonversi += karakter;
+            break;
+        }
+      }
+
+      document.getElementById('output').textContent = hasilKonversi;
+    }
+  </script>
+</head>
+<body>
+  <h1>Converter Huruf</h1>
+  <textarea id="input" rows="5" placeholder="Masukkan teks"></textarea>
+  <button onclick="konversiHuruf()">Konversi</button>
+  <h2>Hasil Konversi:</h2>
+  <div id="output"></div>
+</body>
+</html>
