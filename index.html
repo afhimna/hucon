@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>HUCON (foztoro)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUCONV</title>
   <style>
     body {
       text-align: center;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1, h2 {
+      font-weight: 400;
+    }
+
+    textarea {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      color: #333;
+      width: 80%;
+      min-height: 100px;
+      resize: none;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      word-wrap: break-word;
     }
   </style>
   <script>
@@ -15,7 +63,6 @@
 
       for (var i = 0; i < teksInput.length; i++) {
         var karakter = teksInput[i];
-        // Melakukan konversi berdasarkan rincian yang diberikan
         switch (karakter) {
           case 'h':
             hasilKonversi += 'ا';
@@ -149,7 +196,7 @@
   </script>
 </head>
 <body>
-  <h1>Converter Huruf</h1>
+  <h1>الحمد لله على كل حال</h1>
   <textarea id="input" rows="5" placeholder="Masukkan teks"></textarea>
   <button onclick="konversiHuruf()">Konversi</button>
   <h2>Hasil Konversi:</h2>
